@@ -72,10 +72,11 @@ class FastVenuCreator {
 
   getOptionText(obj) {
     if (this.textSelector) {
-      let text = obj.querySelector(this.textSelector) != null
-        ? obj.querySelector(this.textSelector).innerHTML
-        : obj.innerHTML;
-        return this.stripHtmlTags(text);
+      let text =
+        obj.querySelector(this.textSelector) != null
+          ? obj.querySelector(this.textSelector).innerHTML
+          : obj.innerHTML;
+      return this.stripHtmlTags(text);
     }
     return this.stripHtmlTags(obj.innerHTML);
   }
@@ -95,7 +96,7 @@ class FastVenuCreator {
     this.initVue();
   }
 
-  stripHtmlTags(stringWithHtml){
+  stripHtmlTags(stringWithHtml) {
     return stringWithHtml.replace(/(<([^>]+)>)/gi, "");
   }
 

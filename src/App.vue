@@ -1,5 +1,9 @@
 <template v-if="urlList.length > 0">
-  <MenuBuildier :urlList="urlList" :containerId="containerId" :actionKey="actionKey" />
+  <MenuBuildier
+    :urlList="urlList"
+    :containerId="containerId"
+    :actionKey="actionKey"
+  />
 </template>
 
 <script>
@@ -26,5 +30,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#fastVenuContainer {
+  width: 80%;
+  height: 350px;
+  z-index: 9999;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  background: white;
 }
 </style>

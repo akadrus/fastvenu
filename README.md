@@ -1,23 +1,20 @@
 # fastVenu
 
-## Lazy implementation
+## Lazy implementation for AdminLTE 3
+Addding this code at the bottom of the document
 ```html
 <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
+<script>
+  document.addEventListener( "DOMContentLoaded",
+  (function(){  
+    window.fastVenuInstance.setUpOnElement(document.querySelector('nav.mt-2 > ul.nav'),'li.nav-item > a.nav-link','p');
+  }), false);
+</script>
 ```
-```css
-  #fastVenuContainer{
-      width: 80%;
-      height: 350px;
-      z-index: 9999;
-      position: fixed;
-      top: 10%;
-      left: 10%;
-      background: white;
-  }
-```
-```js
-window.fastVenuInstance.setUpOnElement(document.querySelector('nav.mt-2 > ul.nav'),'li.nav-item > a.nav-link','p')
-```
+will produce this (after pressing ```CTRL + ALT + K``` by default)
+
+![working example on admin lte](example_on_admin_lte.png)
+
 
 ## Project setup
 ```

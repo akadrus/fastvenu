@@ -2,8 +2,8 @@ import { FastVenuCreator } from "@/model/fastVenuCreator.js";
 
 describe("fastVenu", () => {
   it("constructor works", () => {
-    let fastVenuInstance = new FastVenuCreator('b');
-    expect(fastVenuInstance.onKey).toStrictEqual('b');
+    let fastVenuInstance = new FastVenuCreator("b");
+    expect(fastVenuInstance.onKey).toStrictEqual("b");
     expect(fastVenuInstance.urlList).toStrictEqual([]);
   });
 
@@ -32,9 +32,9 @@ describe("fastVenu", () => {
   });
 
   // it("returns optionText correctly", () => {
-    // let fastVenuInstance = new FastVenuCreator();
-    // new html element
-    // set inner html
-    // divide getOptionText into smaller functions
+  // let fastVenuInstance = new FastVenuCreator();
+  // new html element
+  // set inner html
+  // divide getOptionText into smaller functions
   // });
 });

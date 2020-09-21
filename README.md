@@ -8,6 +8,8 @@ After pressing keyboard shortcut user gets fullscreen VueMultiselect instance fe
 Addding this code at the bottom of the document
 ```html
 <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
+<script src="dist/fastVenu.css">
+<script src="dist/fastVenu.umd.js">
 <script>
   document.addEventListener( "DOMContentLoaded",
   (function(){  

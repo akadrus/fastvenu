@@ -1,5 +1,9 @@
 # fastVenu
 
+## About
+Simple project for making navigation searchable. Created in mind with legacy project using old template and a lot of jQuery.
+After pressing keyboard shortcut user gets fullscreen VueMultiselect instance feeded with content of navigation provided object at init. Then user can happy search through all records and press "enter" to move to new location.
+
 ## Lazy implementation for AdminLTE 3
 Addding this code at the bottom of the document
 ```html

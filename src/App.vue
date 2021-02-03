@@ -33,12 +33,15 @@ export default {
 }
 
 #fastVenuContainer {
-  width: 80%;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   z-index: 9999;
   position: fixed;
-  top: 10%;
-  left: 10%;
-  background: white;
+  left: 0;
+  top: 0;
+  padding: auto;
+  // top: 10%;
+  // left: 10%;
+  background: rgba(255,255,255,0.7)
 }
 </style>

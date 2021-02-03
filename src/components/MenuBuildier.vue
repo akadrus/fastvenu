@@ -44,6 +44,7 @@ export default {
   },
   methods: {
     onSelect(option) {
+      // Relative or not? Should be checked!
       window.location = option.url;
     },
     doCommand: function(e) {

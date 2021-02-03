@@ -51,6 +51,8 @@ class FastVenuCreator {
       this.createFastVenu();
       if (this.container.style.display != "block") {
         this.container.style.display = "block";
+      } else{
+        this.container.style.display = "none";
       }
     }
   }
@@ -93,7 +95,15 @@ class FastVenuCreator {
     rootElement.id = rootId;
     this.rootId = rootId;
     this.container.appendChild(rootElement);
+
+          // here we should add "close button" and handle it
+    this.container.addEventListener("click", function(){
+      window.fastVenuInstance.toggle();
+    }, false); 
     this.initVue();
+
+    
+
   }
 
   stripHtmlTags(stringWithHtml) {
